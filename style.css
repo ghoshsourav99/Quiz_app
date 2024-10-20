@@ -18,13 +18,12 @@
 .container {
     width: 35rem;
     box-shadow: px px 5px grey;
-    display: flex;
     background-color: white;
     border-radius: 10px;
-    overflow: hidden;
-    /* flex-direction:column; */
+    display: flex;
+    overflow: auto;
+    flex-direction:column;
 }
-
 .col {
     text-align: justify;
     padding: 15px;
@@ -33,6 +32,8 @@
 
 #submit {
     width: 100%;
+    min-height: 50px; /* Minimum height */
+    flex-shrink: 0; /* Prevent shrinking */
     background-color: rgb(47, 8, 73);
     transition: 0.5s;
     color: white;
@@ -43,7 +44,6 @@
     padding: 10px;
     cursor: pointer;
 }
-
 #submit:hover {
     background-color: rgb(34, 6, 53);
 }
